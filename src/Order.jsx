@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import Pizza from "./Pizza";
 
-// feel free to change en-US / USD to your locale
+
 const intl = new Intl.NumberFormat("en-US", {
   style: "currency",
-  currency: "USD",
+  currency: "BGN",
 });
 
 export default function Order() {
@@ -92,7 +92,7 @@ export default function Order() {
           <button type="submit">Add to Cart</button>
         </div>
         {loading ? (
-          <h3>LOADING …</h3>
+          <h3> loading pizza lol </h3>
         ) : (
           <div className="order-pizza">
             <Pizza
